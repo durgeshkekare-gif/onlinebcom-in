@@ -41,18 +41,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/((?!assets/|api/|favicon|robots|sitemap).*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.onlinebcom.in"
-        }
-      ],
-      "destination": "https://onlinebcom.in/:path*",
-      "permanent": true
-    }
   ]
 }
