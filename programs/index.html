@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
-<link rel="shortcut icon" href="/favicon.ico">
+<meta charset="UTF-8"><link rel="icon" href="/favicon.ico">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="robots" content="index,follow">
-<meta name="description" content="All online BCom programs in India 2026 — Manipal MUJ, Amrita, Amity, LPU, CU, Jain, IGNOU, DU SOL, YCMOU, KSOU and more. Fees, NAAC grades, WES recognition compared.">
-<title>All Online BCom Programs India 2026 — Complete List | onlinebcom.in</title>
-<link rel="canonical" href="https://onlinebcom.in/programs">
+<meta name="description" content="All online BCom programs in India 2026 — Manipal MUJ (₹80K), Amrita (NAAC A++, WES), Amity, LPU, IGNOU, DU SOL and 12 more. Fees, NAAC grades, WES recognition and enrollment guide.">
+<title>Online BCom Programs India 2026 — All Universities Listed | onlinebcom.in</title>
+<link rel="canonical" href="https://onlinebcom.in/programs/">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ONBCOM2026X"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ONBCOM2026X');</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/style.css?v=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=10">
 <style>
 .prog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1rem;}
 @media(max-width:680px){.prog-grid{grid-template-columns:1fr;}}
+.filter-bar{display:flex;gap:.5rem;flex-wrap:wrap;padding:.75rem 5%;background:#fff;border-bottom:1px solid #E5E7EB;position:sticky;top:58px;z-index:10;}
+.filter-btn{border:1px solid #E5E7EB;background:#F9FAFB;color:#374151;padding:.3rem .75rem;border-radius:20px;font-size:.72rem;font-weight:600;cursor:pointer;transition:all .15s;}
+.filter-btn:hover,.filter-btn.active{background:#4338CA;color:#fff;border-color:#4338CA;}
 </style>
 </head>
 <body>
@@ -26,7 +28,7 @@
   <div style="max-width:1160px;margin:0 auto;">
     <div style="font-size:.7rem;color:rgba(255,255,255,.45);margin-bottom:.4rem;"><a href="/" style="color:rgba(255,255,255,.45);text-decoration:none;">Home</a> › Programs</div>
     <h1 style="font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.6rem,3.5vw,2.4rem);color:#fff;letter-spacing:-.02em;line-height:1.2;margin-bottom:.5rem;">All Online BCom Programs<br>in India <span style="color:var(--gold-light);">2026</span></h1>
-    <p style="font-size:.9rem;color:rgba(255,255,255,.5);max-width:600px;line-height:1.75;margin-bottom:1rem;">15 programs listed — from ₹12,000 (IGNOU) to ₹1.35L (Amrita/Amity). NAAC grades, WES recognition and enrollment details for every university.</p>
+    <p style="font-size:.9rem;color:rgba(255,255,255,.5);max-width:620px;line-height:1.75;margin-bottom:1rem;">15 programs listed — from ₹12,000 (IGNOU) to ₹1.35L (Amrita/Amity). NAAC grades, WES recognition and enrollment support for every option.</p>
     <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
       <a href="#with-support" style="background:var(--gold);color:var(--slate);padding:.4rem 1rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;">★ 3 with enroll support</a>
       <a href="#info-only" style="background:rgba(255,255,255,.12);color:rgba(255,255,255,.7);padding:.4rem 1rem;border-radius:6px;font-size:.78rem;font-weight:600;text-decoration:none;">+ 12 more universities</a>
@@ -35,28 +37,40 @@
   </div>
 </div>
 
-<!-- QUICK FILTERS BAR -->
-<div style="background:#fff;border-bottom:2px solid #E5E7EB;padding:.75rem 5%;position:sticky;top:62px;z-index:100;">
-  <div style="max-width:1160px;margin:0 auto;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;">
-    <span style="font-size:.72rem;font-weight:700;color:#374151;margin-right:.25rem;">Filter:</span>
-    <button onclick="filterCards('all')" id="f-all" style="background:#4338CA;color:#fff;border:none;padding:.3rem .75rem;border-radius:20px;font-size:.72rem;font-weight:600;cursor:pointer;">All (15)</button>
-    <button onclick="filterCards('wes')" id="f-wes" style="background:#F3F4F6;color:#374151;border:none;padding:.3rem .75rem;border-radius:20px;font-size:.72rem;font-weight:600;cursor:pointer;">WES recognised</button>
-    <button onclick="filterCards('a-plus-plus')" id="f-app" style="background:#F3F4F6;color:#374151;border:none;padding:.3rem .75rem;border-radius:20px;font-size:.72rem;font-weight:600;cursor:pointer;">NAAC A++</button>
-    <button onclick="filterCards('low-fee')" id="f-low" style="background:#F3F4F6;color:#374151;border:none;padding:.3rem .75rem;border-radius:20px;font-size:.72rem;font-weight:600;cursor:pointer;">Low fee (govt/ODL)</button>
-    <button onclick="filterCards('jaro')" id="f-jaro" style="background:#F3F4F6;color:#374151;border:none;padding:.3rem .75rem;border-radius:20px;font-size:.72rem;font-weight:600;cursor:pointer;">★ Enroll support only</button>
-  </div>
+<!-- QUICK COMPARISON TABLE -->
+<div style="background:#F9FAFB;padding:2rem 5%;border-bottom:1px solid #E5E7EB;">
+<div style="max-width:1160px;margin:0 auto;">
+<h2 style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#4338CA;margin-bottom:1rem;">Quick comparison — top picks 2026</h2>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;font-size:.78rem;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB;">
+<tr style="background:#4338CA;color:#fff;">
+<th style="padding:.6rem 1rem;text-align:left;font-weight:600;">University</th>
+<th style="padding:.6rem .8rem;">NAAC</th>
+<th style="padding:.6rem .8rem;">WES</th>
+<th style="padding:.6rem .8rem;">Fee</th>
+<th style="padding:.6rem .8rem;">Certs bundled</th>
+<th style="padding:.6rem .8rem;">Enroll</th>
+</tr>
+<tr style="background:#EEF2FF;"><td style="padding:.55rem 1rem;font-weight:700;border-bottom:1px solid #E5E7EB;"><a href="https://www.jaroeducation.com/online-bcom-programme-manipal-university" target="_blank" rel="noopener" style="color:#4338CA;">Manipal MUJ ★</a></td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">A+</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;font-weight:700;color:#065F46;">✓</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;font-weight:700;">₹80K</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">Google Cloud</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;"><a href="https://www.jaroeducation.com/online-bcom-programme-manipal-university" target="_blank" rel="noopener" style="background:#4338CA;color:#fff;padding:.25rem .6rem;border-radius:4px;font-size:.7rem;font-weight:700;text-decoration:none;">Enroll ★</a></td></tr>
+<tr><td style="padding:.55rem 1rem;font-weight:700;border-bottom:1px solid #E5E7EB;"><a href="https://www.jaroeducation.com/online-bcom-degree-programme-amrita-vishwa-vidyapeetham" target="_blank" rel="noopener" style="color:#4338CA;">Amrita ★</a></td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;font-weight:700;color:#B45309;">A++</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;font-weight:700;color:#065F46;">✓</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">₹1.35L</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;font-weight:700;color:#4338CA;">Oracle+NISM+NSE</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;"><a href="https://www.jaroeducation.com/online-bcom-degree-programme-amrita-vishwa-vidyapeetham" target="_blank" rel="noopener" style="background:#4338CA;color:#fff;padding:.25rem .6rem;border-radius:4px;font-size:.7rem;font-weight:700;text-decoration:none;">Enroll ★</a></td></tr>
+<tr style="background:#F9FAFB;"><td style="padding:.55rem 1rem;font-weight:700;border-bottom:1px solid #E5E7EB;"><a href="https://www.jaroeducation.com/bachelor-of-commerce-b-com-amity-university" target="_blank" rel="noopener" style="color:#4338CA;">Amity ★</a></td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">A+</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;color:#9CA3AF;">✗</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">₹1.35L</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">None</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;"><a href="https://www.jaroeducation.com/bachelor-of-commerce-b-com-amity-university" target="_blank" rel="noopener" style="background:#4338CA;color:#fff;padding:.25rem .6rem;border-radius:4px;font-size:.7rem;font-weight:700;text-decoration:none;">Enroll ★</a></td></tr>
+<tr><td style="padding:.55rem 1rem;font-weight:700;border-bottom:1px solid #E5E7EB;">LPU Online</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;font-weight:700;color:#B45309;">A++</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;font-weight:700;color:#065F46;">✓</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">~₹70–90K</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">None</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;"><a href="https://www.lpu.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.25rem .6rem;border-radius:4px;font-size:.7rem;font-weight:600;text-decoration:none;">Official ↗</a></td></tr>
+<tr style="background:#F9FAFB;"><td style="padding:.55rem 1rem;font-weight:700;border-bottom:1px solid #E5E7EB;">IGNOU</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">Central Univ</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;color:#9CA3AF;">✗</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;font-weight:700;color:#065F46;">₹12–15K</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;">None</td><td style="padding:.55rem .8rem;text-align:center;border-bottom:1px solid #E5E7EB;"><a href="https://www.ignou.ac.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.25rem .6rem;border-radius:4px;font-size:.7rem;font-weight:600;text-decoration:none;">Official ↗</a></td></tr>
+<tr><td style="padding:.55rem 1rem;font-weight:700;">DU SOL</td><td style="padding:.55rem .8rem;text-align:center;">DU</td><td style="padding:.55rem .8rem;text-align:center;color:#9CA3AF;">✗</td><td style="padding:.55rem .8rem;text-align:center;">₹10–15K/yr</td><td style="padding:.55rem .8rem;text-align:center;">None</td><td style="padding:.55rem .8rem;text-align:center;"><a href="https://sol.du.ac.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.25rem .6rem;border-radius:4px;font-size:.7rem;font-weight:600;text-decoration:none;">Official ↗</a></td></tr>
+</table>
+</div>
+<p style="font-size:.72rem;color:#9CA3AF;margin-top:.5rem;">★ = Enrollment support + EMI available. Fees as of July 2026.</p>
+</div>
 </div>
 
-<!-- WITH ENROLLMENT SUPPORT -->
-<div id="with-support" style="background:#FAFAFA;padding:56px 5%;border-bottom:1px solid #E5E7EB;">
-  <div style="max-width:1160px;margin:0 auto;">
-    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.3rem;">
-      <div style="background:#4338CA;color:#fff;font-size:.65rem;font-weight:700;padding:.2rem .6rem;border-radius:4px;letter-spacing:.06em;">★ ENROLLMENT SUPPORT</div>
-      <span style="font-size:.65rem;color:#9CA3AF;">EMI available · Counsellor assigned · Career guidance included</span>
-    </div>
-    <h2 style="font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.2rem,2.5vw,1.7rem);color:#111827;margin-bottom:.3rem;">Programs with Enrollment Support</h2>
-    <p style="font-size:.82rem;color:#6B7280;margin-bottom:1.25rem;">Apply through our partner network — zero-cost EMI, dedicated counsellor and career guidance included.</p>
-    <div class="prog-grid" id="jaro-grid"><div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+<!-- PROGRAMS WITH ENROLLMENT SUPPORT -->
+<div id="with-support" style="padding:2.5rem 5%;">
+<div style="max-width:1160px;margin:0 auto;">
+  <div style="display:inline-flex;align-items:center;gap:.4rem;background:#4338CA;color:#fff;font-size:.65rem;font-weight:700;padding:.2rem .6rem;border-radius:4px;letter-spacing:.06em;margin-bottom:.75rem;">★ ENROLLMENT SUPPORT</div>
+  <span style="font-size:.65rem;color:#9CA3AF;margin-left:.5rem;">EMI available · Counsellor assigned · Career guidance included</span>
+  <h2 style="font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.2rem,2.5vw,1.7rem);color:#111827;margin:.3rem 0 .3rem;">Programs with Enrollment Support</h2>
+  <p style="font-size:.82rem;color:#6B7280;margin-bottom:1.25rem;">Apply through our partner network — zero-cost EMI, dedicated counsellor and career guidance included.</p>
+  <div class="prog-grid"><div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
   <div style="height:4px;background:#4338CA;"></div>
   <div style="padding:1.1rem 1.25rem;">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
@@ -65,274 +79,258 @@
     </div>
     <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
     <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">NAAC A+ · WES · ICAS · UGC-DEB</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">WES ✓</span><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A+</span><span style="background:#4338CA;color:#fff;font-size:.58rem;font-weight:700;padding:.15rem .5rem;border-radius:3px;">Best Value</span></div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">WES ✓</span><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A+</span><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">ICAS ✓</span><span style="background:#4338CA;color:#fff;font-size:.58rem;font-weight:700;padding:.15rem .5rem;border-radius:3px;">Best Value</span></div>
     <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Lowest fee for NAAC A+ online BCom</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ WES recognised — valid for Canada PR</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ ICAS recognised for international employment</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Accounting, taxation, business law, financial mgmt</li></ul>
     <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹80,000 total</div><div style="font-size:.62rem;color:#9CA3AF;">₹13K–16K/semester · 3 years</div></div>
+      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹80,000 total</div><div style="font-size:.62rem;color:#9CA3AF;">₹13K–16K/sem · 3 years</div></div>
     </div>
     <a href="https://www.jaroeducation.com/online-bcom-programme-manipal-university" target="_blank" rel="noopener" style="display:block;text-align:center;background:#4338CA;color:#fff;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Enroll ★</a>
   </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#0D9488;"></div>
+</div><div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:4px;background:#4338CA;"></div>
   <div style="padding:1.1rem 1.25rem;">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#0D9488;line-height:1.3;">Amrita Vishwa Vidyapeetham</span>
+      <span style="font-size:.65rem;font-weight:700;color:#4338CA;line-height:1.3;">Amrita Vishwa Vidyapeetham</span>
       <span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">★ Enroll support</span>
     </div>
     <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">NAAC A++ · Institution of Eminence · WES · UGC-DEB</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">WES ✓</span><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A++</span><span style="background:#0D9488;color:#fff;font-size:.58rem;font-weight:700;padding:.15rem .5rem;border-radius:3px;">Best Accreditation</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Highest NAAC grade (A++) — fewer than 5% of universities</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ WES recognised for USA/Canada</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Industry certs: Oracle, NISM, NSE, Amazon (bundled)</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Accounting, taxation, corporate finance, auditing</li></ul>
+    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">NAAC A++ · WES · Oracle certs bundled · UGC-DEB</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">WES ✓</span><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A++</span><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Oracle cert</span><span style="background:#4338CA;color:#fff;font-size:.58rem;font-weight:700;padding:.15rem .5rem;border-radius:3px;">Top Accreditation</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ NAAC A++ — highest possible grade</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Oracle + industry certs bundled at no extra cost</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ WES recognised for Canada PR</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Grant Thornton curriculum partner</li></ul>
     <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹1.35L total</div><div style="font-size:.62rem;color:#9CA3AF;">₹45K/year · 3 years</div></div>
+      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹1.35L total</div><div style="font-size:.62rem;color:#9CA3AF;">₹22K–27K/sem · 3 years</div></div>
     </div>
-    <a href="https://www.jaroeducation.com/online-bcom-degree-programme-amrita-vishwa-vidyapeetham" target="_blank" rel="noopener" style="display:block;text-align:center;background:#0D9488;color:#fff;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Enroll ★</a>
+    <a href="https://www.jaroeducation.com/online-bcom-degree-programme-amrita-vishwa-vidyapeetham" target="_blank" rel="noopener" style="display:block;text-align:center;background:#4338CA;color:#fff;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Enroll ★</a>
   </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#7C3AED;"></div>
+</div><div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:4px;background:#4338CA;"></div>
   <div style="padding:1.1rem 1.25rem;">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#7C3AED;line-height:1.3;">Amity University Online</span>
+      <span style="font-size:.65rem;font-weight:700;color:#4338CA;line-height:1.3;">Amity University Online</span>
       <span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">★ Enroll support</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">Online B.Com</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">NAAC A+ · India's first online UGC university · UGC-DEB</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A+</span><span style="background:#7C3AED;color:#fff;font-size:.58rem;font-weight:700;padding:.15rem .5rem;border-radius:3px;">Strong Brand</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ India's first UGC-recognised online university</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ 6,000+ faculty and industry experts</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ 24/7 student support and mentorship</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Commerce, finance, accounting, taxation, business law</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹1.35L total</div><div style="font-size:.62rem;color:#9CA3AF;">₹45K/year · 3 years</div></div>
-    </div>
-    <a href="https://www.jaroeducation.com/bachelor-of-commerce-b-com-amity-university" target="_blank" rel="noopener" style="display:block;text-align:center;background:#7C3AED;color:#fff;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Enroll ★</a>
-  </div>
-</div></div>
-  </div>
-</div>
-
-<!-- INFO ONLY -->
-<div id="info-only" style="padding:56px 5%;">
-  <div style="max-width:1160px;margin:0 auto;">
-    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.3rem;">
-      <div style="background:#F3F4F6;color:#6B7280;font-size:.65rem;font-weight:700;padding:.2rem .6rem;border-radius:4px;letter-spacing:.06em;">INFO ONLY — NO ENROLLMENT SUPPORT</div>
-    </div>
-    <h2 style="font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.2rem,2.5vw,1.7rem);color:#111827;margin-bottom:.3rem;">All Other Online BCom Universities in India</h2>
-    <p style="font-size:.82rem;color:#6B7280;margin-bottom:1.25rem;">Listed for reference — no enrollment support available. Visit official websites directly to apply.</p>
-    <div class="prog-grid" id="other-grid"><div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#6366F1;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#6366F1;line-height:1.3;">Manipal University Jaipur (MUJ)</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
     </div>
     <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">Online BCom (Hons)</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">NAAC A+ · WES</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">WES ✓</span><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A+</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ BCom Hons with accounting & finance specialisation</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Same WES recognition as regular BCom</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Deeper accounting and financial analysis curriculum</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹1L total</div><div style="font-size:.62rem;color:#9CA3AF;">Honours variant · 3 years</div></div>
-    </div>
-    <a href="https://manipal.edu/mu-online.html" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#64748B;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#64748B;line-height:1.3;">LPU Online (Lovely Professional University)</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">NAAC A++ · WES · UGC-DEB</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">WES ✓</span><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A++</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ NAAC A++ · WES recognised for Canada immigration</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Strong LPU alumni network (800K+)</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Industry-aligned curriculum with live projects</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Good placement support infrastructure</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹60,000–80,000</div><div style="font-size:.62rem;color:#9CA3AF;">Semester-wise · 3 years</div></div>
-    </div>
-    <a href="https://online.lpu.in/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#64748B;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#64748B;line-height:1.3;">Chandigarh University Online</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
     <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">NAAC A+ · UGC-DEB</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A+</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ NAAC A+ private university</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Digital commerce and fintech specialisation options</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Active placement support cell</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Strong north India employer recognition</li></ul>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A+</span><span style="background:#D1FAE5;color:#065F46;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Delhi NCR brand</span><span style="background:#4338CA;color:#fff;font-size:.58rem;font-weight:700;padding:.15rem .5rem;border-radius:3px;">Delhi Brand</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Strong Delhi NCR employer recognition</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ BCom (Hons) — Honours degree</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ 700K+ alumni network</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Finance, Accounting, Business Law subjects</li></ul>
     <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹60,000–80,000</div><div style="font-size:.62rem;color:#9CA3AF;">Total 3 years · 3 years</div></div>
+      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹1.35L total</div><div style="font-size:.62rem;color:#9CA3AF;">₹22K–27K/sem · 3 years</div></div>
     </div>
-    <a href="https://www.cuchd.in/online/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#64748B;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#64748B;line-height:1.3;">Jain University Online</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">NAAC A++ · UGC-DEB</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A++</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ NAAC A++ (same grade as LPU, Amrita)</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Bangalore-based — strong south India employer network</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Fintech and digital banking electives available</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Industry immersion sessions and mentorship</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹70,000–90,000</div><div style="font-size:.62rem;color:#9CA3AF;">Total 3 years · 3 years</div></div>
-    </div>
-    <a href="https://www.jainuniversity.ac.in/online/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#64748B;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#64748B;line-height:1.3;">Symbiosis Centre for Distance Learning (SCDL)</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">PG Diploma in Business Administration (Commerce)</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">Deemed University · UGC-DEB</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Symbiosis brand name well-known in Maharashtra/west India</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ PGDBA not a UG degree — postgrad diploma</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Good for working professionals with existing UG</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Strong alumni network in Pune/Mumbai/Bangalore</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹40,000–60,000</div><div style="font-size:.62rem;color:#9CA3AF;">PG Diploma, not degree · 1–2 years</div></div>
-    </div>
-    <a href="https://www.scdl.net/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#64748B;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#64748B;line-height:1.3;">Sikkim Manipal University (SMU-DE)</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">State University · UGC-DEB</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC B+</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ UGC-DEB approved · State university</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Long-established distance learning infrastructure</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ One of the first universities to offer online commerce degrees in India</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Lower brand recognition vs Manipal MUJ/Amrita</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹40,000–60,000</div><div style="font-size:.62rem;color:#9CA3AF;">Total 3 years · 3 years</div></div>
-    </div>
-    <a href="https://smude.edu.in/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#94A3B8;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#94A3B8;line-height:1.3;">Annamalai University</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">BCom (Distance Learning)</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">State University · DEB approved</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC B++</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Very low fee</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ UGC-DEB approved distance program</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Strong recognition in Tamil Nadu</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ ODL mode — not fully online</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹15,000–25,000 total</div><div style="font-size:.62rem;color:#9CA3AF;">ODL/Distance mode · 3 years</div></div>
-    </div>
-    <a href="https://www.annamalaiuniversity.ac.in/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#94A3B8;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#94A3B8;line-height:1.3;">Karnataka State Open University (KSOU)</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">BCom (Open Learning)</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">State Open University · DEB approved</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC B</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Karnataka state open university</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Very affordable UGC-approved BCom</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Strong recognition in Karnataka</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Physical study centres across Karnataka</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹15,000–20,000 total</div><div style="font-size:.62rem;color:#9CA3AF;">ODL mode · 3 years</div></div>
-    </div>
-    <a href="https://ksouedu.com/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#94A3B8;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#94A3B8;line-height:1.3;">IGNOU (Indira Gandhi National Open University)</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">BCom (Distance Learning)</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">Central University · UGC-DEB · Govt of India</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A</span><span style="background:#94A3B8;color:#fff;font-size:.58rem;font-weight:700;padding:.15rem .5rem;border-radius:3px;">Lowest Fee</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ India's largest open university — 4M+ students</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Cheapest BCom degree in India (govt rates)</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Recognised for government sector employment</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ No entrance exam · Flexible completion timeline</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹12,000–16,000 total</div><div style="font-size:.62rem;color:#9CA3AF;">Lowest cost BCom India · 3–6 years</div></div>
-    </div>
-    <a href="https://www.ignou.ac.in/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#94A3B8;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#94A3B8;line-height:1.3;">DU SOL (Delhi University School of Open Learning)</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">BCom / BCom (Hons) — Open Learning</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">Central University · University of Delhi</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Delhi University brand — highly respected in north India</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ BCom and BCom Hons both available</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Merit-based admission — competitive cutoffs</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Visit sol.du.ac.in for current cutoffs</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹10,000–15,000/year</div><div style="font-size:.62rem;color:#9CA3AF;">Merit-based admission · 3 years</div></div>
-    </div>
-    <a href="https://sol.du.ac.in/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#94A3B8;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#94A3B8;line-height:1.3;">Yashwantrao Chavan Maharashtra Open University (YCMOU)</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">BCom (Open Learning)</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">State Open University · Maharashtra</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC B++</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Maharashtra state open university</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Good recognition in Maharashtra and west India</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Affordable fees · UGC-DEB approved</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Study centres across Maharashtra</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹8,000–12,000 total</div><div style="font-size:.62rem;color:#9CA3AF;">ODL mode · 3 years</div></div>
-    </div>
-    <a href="https://www.ycmou.ac.in/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
-  </div>
-</div>
-<div style="background:#fff;border-radius:14px;border:1.5px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s,transform .18s;" onmouseover="this.style.boxShadow='0 6px 28px rgba(0,0,0,.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
-  <div style="height:4px;background:#94A3B8;"></div>
-  <div style="padding:1.1rem 1.25rem;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
-      <span style="font-size:.65rem;font-weight:700;color:#94A3B8;line-height:1.3;">Bharathidasan University</span>
-      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Info only</span>
-    </div>
-    <div style="font-weight:700;font-size:.92rem;color:#111827;margin-bottom:.15rem;">BCom (Distance Learning)</div>
-    <div style="font-size:.65rem;color:#9CA3AF;margin-bottom:.5rem;">Central University · Tamil Nadu</div>
-    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem;"><span style="background:#EEF2FF;color:#3730A3;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A</span></div>
-    <ul style="list-style:none;padding:0;margin:0 0 .5rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Strong reputation in Tamil Nadu and south India</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ UGC-DEB approved distance BCom</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Affordable fee for a central university credential</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">✓ Physical study centres in Tamil Nadu</li></ul>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;border-top:1px solid #F3F4F6;">
-      <div><div style="font-weight:700;font-size:.9rem;color:#111827;">~₹10,000–18,000 total</div><div style="font-size:.62rem;color:#9CA3AF;">ODL mode · 3 years</div></div>
-    </div>
-    <a href="https://www.bdu.ac.in/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#F3F4F6;color:#374151;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Official site ↗</a>
+    <a href="https://www.jaroeducation.com/bachelor-of-commerce-b-com-amity-university" target="_blank" rel="noopener" style="display:block;text-align:center;background:#4338CA;color:#fff;padding:.5rem .75rem;border-radius:6px;font-size:.78rem;font-weight:700;text-decoration:none;margin-top:.75rem;">Enroll ★</a>
   </div>
 </div></div>
+</div>
+</div>
+
+<!-- ALL OTHER OPTIONS -->
+<div id="info-only" style="padding:2.5rem 5%;background:#F9FAFB;border-top:1px solid #E5E7EB;">
+<div style="max-width:1160px;margin:0 auto;">
+  <h2 style="font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.2rem,2.5vw,1.7rem);color:#111827;margin:0 0 .3rem;">All Other Online BCom Options in India</h2>
+  <p style="font-size:.82rem;color:#6B7280;margin-bottom:1.25rem;">Apply directly on the university's official website. Listed for reference — no enrollment support through onlinebcom.in.</p>
+  <div class="prog-grid"><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">LPU Online (Lovely Professional University)</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">NAAC A++ · WES · UGC-DEB</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">WES ✓</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A++</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Budget pick</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• NAAC A++ + WES at lowest price tier</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• 800K+ alumni network</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Strong Punjab & north India placement</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹70–90K</div><div style="font-size:.6rem;color:#9CA3AF;">3 years · 6 semesters</div></div>
+      <a href="https://www.lpu.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
   </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">Chandigarh University Online</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">NAAC A+ · UGC-DEB</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A+</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">₹60–80K</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Most affordable NAAC A+ BCom</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Strong north India corporate network</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Finance & business analytics electives</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹60–80K</div><div style="font-size:.6rem;color:#9CA3AF;">3 years</div></div>
+      <a href="https://www.cuchd.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">Jain University Online</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">NAAC A++ · UGC-DEB</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A++</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Bangalore</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• NAAC A++ — same grade as Amrita at lower cost</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Strong Bangalore fintech & commerce sector links</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• AI tools in finance elective</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹80K–1L</div><div style="font-size:.6rem;color:#9CA3AF;">3 years</div></div>
+      <a href="https://www.jainuniversity.ac.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">Symbiosis Centre for Distance Learning (SCDL)</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">BCom / PGDBF</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">SIU NAAC A++ · UGC approved</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Symbiosis</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Pune brand</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Symbiosis brand well-known in Maharashtra</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• 600K+ alumni network</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Strong in BFSI sector</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹30–50K</div><div style="font-size:.6rem;color:#9CA3AF;">3 years</div></div>
+      <a href="https://www.scdl.net/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">IGNOU (Indira Gandhi National Open University)</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">BCom</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">Central University · UGC approved</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Central Univ</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Govt funded</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Cheapest valid BCom in India</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• 3,000+ study centres across India</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Valid for govt jobs, CA, MBA admissions</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹12–15K total</div><div style="font-size:.6rem;color:#9CA3AF;">3–6 years (flexible)</div></div>
+      <a href="https://www.ignou.ac.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">DU SOL (Delhi University — School of Open Learning)</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">BCom / BCom (Hons)</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">University of Delhi · UGC approved</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">DU Brand</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Delhi brand</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Degree says 'University of Delhi'</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Same brand as Hindu College, SRCC</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• CUET required for admission</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹10–15K/yr</div><div style="font-size:.6rem;color:#9CA3AF;">3 years · CUET required</div></div>
+      <a href="https://sol.du.ac.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">Shoolini University Online</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">NAAC A+ · UGC-DEB</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A+</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">HP</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• NAAC A+ at competitive fee</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Himachal Pradesh based</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Strong analytics electives</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹50–70K</div><div style="font-size:.6rem;color:#9CA3AF;">3 years</div></div>
+      <a href="https://www.shooliniuniversity.com/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">Vikrama Simhapuri University (VSU)</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">BCom Distance</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">State University · UGC approved</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">State Univ</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">AP</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Andhra Pradesh state university</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Affordable distance BCom</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Valid for AP govt jobs</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹8–12K</div><div style="font-size:.6rem;color:#9CA3AF;">3 years</div></div>
+      <a href="https://www.simhapuriuniv.ac.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">YCMOU (Yashwantrao Chavan Maharashtra Open University)</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">BCom</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">State Open University · UGC approved</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Maharashtra</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">State OGU</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Maharashtra state open university</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Valid for Maharashtra govt and banking exams</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Study centres across Maharashtra</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹6–10K</div><div style="font-size:.6rem;color:#9CA3AF;">3 years</div></div>
+      <a href="https://www.ycmou.ac.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">KSOU (Karnataka State Open University)</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">BCom</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">State Open University · UGC approved</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Karnataka</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">State OGU</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Karnataka state open university</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Valid for Karnataka state competitive exams</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Affordable distance BCom</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹6–10K</div><div style="font-size:.6rem;color:#9CA3AF;">3 years</div></div>
+      <a href="https://ksoumysuru.ac.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div><div style="background:#fff;border-radius:14px;border:1px solid #E5E7EB;overflow:hidden;transition:box-shadow .18s;" onmouseover="this.style.boxShadow='0 4px 18px rgba(0,0,0,.07)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+  <div style="height:3px;background:#E5E7EB;"></div>
+  <div style="padding:1rem 1.1rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.3rem;">
+      <span style="font-size:.65rem;font-weight:700;color:#374151;line-height:1.3;">MIT World Peace University Online (MIT-WPU)</span>
+      <span style="background:#F3F4F6;color:#6B7280;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">↗ Direct</span>
+    </div>
+    <div style="font-weight:700;font-size:.88rem;color:#111827;margin-bottom:.15rem;">Online BCom</div>
+    <div style="font-size:.63rem;color:#9CA3AF;margin-bottom:.4rem;">NAAC A+ · UGC-DEB</div>
+    <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.55rem;"><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">NAAC A+</span><span style="background:#F3F4F6;color:#374151;font-size:.58rem;font-weight:700;padding:.1rem .4rem;border-radius:3px;">Pune</span></div>
+    <ul style="list-style:none;padding:0;margin:0 0 .45rem;"><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Pune-based, strong Maharashtra corporate links</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• Finance + Digital Business electives</li><li style="font-size:.75rem;color:#4B5563;line-height:1.7;padding:.1rem 0;">• NAAC A+ accredited</li></ul>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px solid #F3F4F6;">
+      <div><div style="font-weight:700;font-size:.85rem;color:#111827;">~₹70–90K</div><div style="font-size:.6rem;color:#9CA3AF;">3 years</div></div>
+      <a href="https://online.mitwpu.edu.in/" target="_blank" rel="noopener" style="background:#F3F4F6;color:#374151;padding:.35rem .75rem;border-radius:5px;font-size:.72rem;font-weight:600;text-decoration:none;">Official ↗</a>
+    </div>
+  </div>
+</div></div>
+</div>
+</div>
+
+<!-- FAQ -->
+<div style="padding:2.5rem 5%;max-width:900px;margin:0 auto;">
+<h2 style="font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:#111827;margin-bottom:1.25rem;">Frequently Asked Questions</h2>
+<details style="border:1px solid #E5E7EB;border-radius:8px;padding:.9rem 1rem;margin-bottom:.75rem;cursor:pointer;">
+<summary style="font-weight:700;font-size:.85rem;">Which online BCom is best in India 2026?</summary>
+<p style="font-size:.82rem;color:#4B5563;margin-top:.6rem;line-height:1.8;">For overall value: <strong>Manipal MUJ</strong> (NAAC A+, WES, ₹80K — lowest fee for a WES-recognised BCom). For best accreditation: <strong>Amrita</strong> (NAAC A++, WES, Oracle+NISM certs). For budget: <strong>IGNOU</strong> (₹12–15K, valid degree). For Delhi brand: <strong>DU SOL</strong>. For Canada PR: Manipal MUJ or Amrita (WES recognised).</p>
+</details>
+<details style="border:1px solid #E5E7EB;border-radius:8px;padding:.9rem 1rem;margin-bottom:.75rem;cursor:pointer;">
+<summary style="font-weight:700;font-size:.85rem;">Is online BCom valid for CA registration?</summary>
+<p style="font-size:.82rem;color:#4B5563;margin-top:.6rem;line-height:1.8;">Yes — ICAI accepts all UGC-DEB approved online BCom degrees for CA Foundation registration. This includes Manipal MUJ, Amrita, Amity, LPU, IGNOU, and DU SOL. The BCom provides the best subject preparation for CA exams — accounting, taxation, business law, and company law are BCom core subjects and CA exam subjects.</p>
+</details>
+<details style="border:1px solid #E5E7EB;border-radius:8px;padding:.9rem 1rem;margin-bottom:.75rem;cursor:pointer;">
+<summary style="font-weight:700;font-size:.85rem;">Can I do online BCom and work simultaneously?</summary>
+<p style="font-size:.82rem;color:#4B5563;margin-top:.6rem;line-height:1.8;">Yes — online BCom has no attendance requirement. Study through a digital portal at your own schedule. All major universities (Manipal, Amrita, Amity, LPU) run online-only delivery — exams are either online-proctored or at authorised centres near you. Most students find 8–10 hours/week sufficient for online BCom coursework.</p>
+</details>
 </div>
 
 <!-- CTA -->
-<div style="background:linear-gradient(135deg,#3730A3,#1E1B4B);padding:56px 5%;text-align:center;">
-  <h2 style="font-family:'DM Serif Display',Georgia,serif;font-size:clamp(1.3rem,3vw,1.9rem);color:#fff;margin-bottom:.5rem;">Not sure which BCom to choose?</h2>
-  <p style="font-size:.9rem;color:rgba(255,255,255,.5);margin-bottom:1.5rem;max-width:440px;margin-left:auto;margin-right:auto;">Free counsellor compares all options based on your budget, WES need and career goals.</p>
-  <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
-    <a href="/apply.html" style="display:inline-block;background:var(--gold);color:#0F172A;padding:.875rem 2rem;border-radius:8px;font-weight:700;font-size:.95rem;text-decoration:none;">Get free guidance →</a>
-    <a href="/compare.html" style="display:inline-block;background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);padding:.875rem 1.5rem;border-radius:8px;font-weight:600;font-size:.9rem;text-decoration:none;">Compare table</a>
-  </div>
+<div style="background:#4338CA;padding:3rem 5%;text-align:center;">
+<div style="max-width:700px;margin:0 auto;">
+<h2 style="font-family:'DM Serif Display',Georgia,serif;color:#fff;font-size:clamp(1.3rem,3vw,1.9rem);margin-bottom:.5rem;">Not sure which BCom program fits your goals?</h2>
+<p style="color:rgba(255,255,255,.7);font-size:.9rem;margin-bottom:1.5rem;">Our counsellors compare programs based on your goals, budget and career target — free, 20 minutes.</p>
+<a href="/apply.html" style="display:inline-block;background:var(--gold);color:var(--slate);padding:.8rem 2rem;border-radius:8px;font-size:.9rem;font-weight:700;text-decoration:none;">Get free guidance →</a>
+</div>
 </div>
 
 <footer class="footer"><div class="footer-grid inner">
